@@ -194,6 +194,19 @@ public abstract class ConstUtil {
      */
     public static final String REGEX_NEGATIVE_FLOAT       = "^-[1-9]\\d*\\.\\d*|-0\\.\\d*[1-9]\\d*$";
 
+    /**
+     * 正则：script
+     */
+    public static final String REGEX_SCRIPT = "<script[^>]*?>[\\s\\S]*?<\\/script>";
+    /**
+     * 正则：style
+     */
+    public static final String REGEX_STYLE = "<style[^>]*?>[\\s\\S]*?<\\/style>";
+    /**
+     * 正则：html
+     */
+    public static final String REGEX_HTML = "<[^>]+>"; // 定义HTML标签的正则表达式
+
     /******************** 编码解码相关常量 ********************/
     /**
      * 默认字符集：UTF-8

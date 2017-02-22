@@ -11,7 +11,7 @@ import java.io.StringWriter;
  *      desc  : 异常工具类
  * </pre>
  */
-public class ExceptionUtil {
+public abstract class ExceptionUtil {
 
     /**
      * 将CheckedException转换为UncheckedException

@@ -10,7 +10,7 @@ import java.util.regex.Pattern;
  *
  * @author solverpeng
  */
-public abstract class RegexUtils {
+public abstract class RegexUtil {
 
     /**
      * 验证手机号（简单）

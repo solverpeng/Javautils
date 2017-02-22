@@ -17,7 +17,7 @@ import java.net.URLEncoder;
  *      desc  : 编码解码工具类
  * </pre>
  */
-public class EncodeUtils {
+public abstract class EncodeUtil {
     /**
      * Hex编码.
      */
