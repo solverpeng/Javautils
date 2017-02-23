@@ -21,7 +21,7 @@ import java.util.List;
  *      desc  : 反射工具类
  * </pre>
  */
-public class ReflectionUtils {
+public abstract class ReflectionUtils {
     private static final Logger LOGGER = LoggerFactory.getLogger(ReflectionUtils.class);
 
     /**

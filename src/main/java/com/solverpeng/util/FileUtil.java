@@ -18,7 +18,7 @@ import java.util.List;
  *      desc  : 文件工具类
  * </pre>
  */
-public class FileUtil {
+public abstract class FileUtil {
     /**
      * 根据文件路径获取文件
      *
