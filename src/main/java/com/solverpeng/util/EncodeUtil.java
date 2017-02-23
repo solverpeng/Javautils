@@ -57,6 +57,7 @@ public abstract class EncodeUtil {
         return Base64.decodeBase64(input);
     }
 
+
     /**
      * Base62编码。
      */

@@ -4,6 +4,7 @@ import org.apache.commons.lang3.StringUtils;
 
 import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -16,7 +17,7 @@ import java.util.regex.Pattern;
  *      desc  : 字符串工具类
  * </pre>
  */
-public class StringUtil extends StringUtils {
+public abstract class StringUtil extends StringUtils {
 
     /**
      * 去掉传入字符串中HTML标签
@@ -103,6 +104,16 @@ public class StringUtil extends StringUtils {
         } else {
             return false;
         }
+    }
+
+    /**
+     * null转为长度为0的字符串
+     *
+     * @param string 待转字符串
+     * @return s为null转为长度为0字符串，否则不改变
+     */
+    public static String null2Length0(String string) {
+        return string == null ? "" : string;
     }
 
     /**
@@ -226,6 +237,21 @@ public class StringUtil extends StringUtils {
             }
         }
         return result;
+    }
+
+    /**
+     * 检查字符串数组中是否包含某个字符串
+     * @param arr   字符串数组
+     * @param item  需要检查的字符串
+     * @return 检查结果
+     */
+    public static boolean contains(String[] arr, String item) {
+        if(arr == null || arr.length == 0) {
+            return false;
+        }
+
+        List<String> list = Arrays.asList(arr);
+        return list.contains(item);
     }
 
 }
